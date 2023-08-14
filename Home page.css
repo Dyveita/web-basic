@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+    
+    
+
+}
+
+
+.navbar {
+    width: 100vw;
+    height: 10vh;
+    background: #072831;
+    display: flex;
+    margin-bottom: auto;
+}
+
+.navbar-brands {
+    width: 40%;
+    height: 100%;
+    font-family: 'Pattaya';
+    font-size: 70px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #E09F3E;
+    transition: color 0.3s;
+}
+.navbar-brands:hover {
+    width: 40%;
+    height: 100%;
+    font-family: 'Pattaya';
+    font-size: 70px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #E09F3E;
+}
+
+.navbar-item {
+    width: 60%;
+    height: 100%;
+    color: #E09F3E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-item {
+    color: rgb(0, 218, 62);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+    /* titiknya ilang */
+
+}
+
+li {
+    display: inline;
+    margin: 10px;
+}
+
+/*  */
+li a {
+    text-decoration: none;
+    color: #E09F3E;
+    font-family: Space Mono;
+}
+
+li a:hover {
+    text-decoration: none;
+    color: #335C67;
+    font-family: Space Mono;
+    transition: 0.3s;
+}
+/* BERHENTI INI AREA NAVBAR  */
+/* bagian bawah navbar  */
+.hero {
+    width: 100vw;
+    height: 100vh;
+    background: #335C67;
+    display: flex;
+
+}
+
+.area-text {
+    width: 35%;
+    padding: 100px;
+    font-family: Noto Sans Tirhuta;
+    font-size: large;
+    height: 70%;
+    align-items: center;
+
+}
+
+.text-title {
+    font-size: 3em;
+    font-weight: bold;
+    color: #E09F3E;
+    margin-top: -40px;
+
+
+
+}
+
+.text-tagline {
+    font-size: 1.2em;
+    margin-top: px;
+    color: #072831;
+    font-family: Space Mono;
+
+}
+/* button area */
+.button-Explor {
+    margin-top: 50px;
+}
+.btnexplor {
+    background: #072831;
+    padding: 10px 60px;
+    border-radius: 30px;
+    color: #E09F3E;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 1s;
+}
+.btnexplor:hover {
+    background: #E09F3E;
+    padding: 10px 60px;
+    border-radius: 30px;
+    color: #072831;
+    font-weight: 700;
+    text-decoration: none;
+}
+/* stop this is buttton area */
+
+.img-brands {
+    width: 300px;
+    height: 100px;
+    transform: scale(0.35);
+}
+.home-item {
+    color: #072831;
+    padding: 40px 20px;
+    border-radius: 15px;
+    background-color: #E09F3E;
+}
+
+.text-judul{
+    width: 100vw;
+    height: 20vh;
+    background-color: #5390a1;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.text {
+    scale: 8.0;
+    font-family: pattaya;
+    color: #dfceb4;
+
+}
+/* bagian isi  */
+
+/* card */
+
+.judul{
+    height: 80px;
+    width: 250px;
+    margin-bottom:280px;
+    font-family: Space Mono;
+    color: #9f7940;
+    font-size: 20px;
+    text-align: center;
+}
+.judul h3{
+    font-size: 30px;
+    text-align: center;
+    color: #E09F3E;
+    margin-top: -30px;  
+}
+h1{
+    
+    font-size: 100px;
+}
+body{
+    width: 100%;
+}
+.title-servis h1{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 42px;
+}
+.title-servis h1::after{
+    content: ;
+    height: 4px;
+    width: 230px;
+    background-color: #E09F3E;
+    display: auto;
+    margin: auto;
+}
+.services{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 75px auto;
+    text-align: center;
+}
+.card{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 20px;
+    padding: 20px 20px ;
+    background-color: #9f7940;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.card:hover{
+    background-color: #52409f;
+    transition: 0.4s ease;
+}
+.card .icon{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.card h2{
+    font-size: 28px;
+    color: aquamarine;
+    margin-bottom: 20px;
+}
+.card p{
+    font-size: 17px;
+    margin-bottom: 30px;
+    line-height: 1.5 ;
+    color: #52409f;
+}
+@media screen and(max-width: 940px){
+    .services{
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        width: 85%;
+        display: flex ;
+    }
+}

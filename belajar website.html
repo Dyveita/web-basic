@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*  */
+         *{
+            margin: 0;
+            padding: 0;
+        }   
+        .navbar{  /*wadah dari navbar-brand dan navbar-item =di bagi dua  */
+            width: auto;
+            height: 10vh;
+            background-color: blue;
+            /* di beri display....align item =untuk membuat si nabar item bisa masuk ke navbar yang sebelah, karena navbar membagi dua bagian ↓*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /* navbar-brand utuk logo dll */
+        .navbar-brand{/* B1 */
+            width: 40vw;
+            height: 10vh;
+            font-size: 40px;
+            background-color: blanchedalmond;
+            color: rgb(152, 218, 132);
+        }
+        /* navbar item :home,dll*/
+        /*  */
+        /*  */
+        /*  */
+        .navbar-item{ /* B2 */
+            width:60vw;
+            height: 10vh;
+            background-color: brown;
+            display: flex; /* text lsitnya jadi ke tengah */
+        }
+        /* batas para navbar */
+        .list-item{ /* B2-1 */
+            /* di sini ngak bisa ngasih warna text bisanya di         li a{} */
+            width: 100%;
+            display: flex;
+            justify-content: center; /* biar ketengah */
+            align-items: center;
+        }
+        ul{
+            list-style-type: none;
+            /* menghilangkan titik */
+        }
+        li{
+            display: inline;/* Agar sejajar */
+            margin: 10px; /* DI beri jarak */
+        }
+        li a{/* untuk sinematik/dekorasi*/
+            text-decoration: none;
+            color: aqua;
+        }
+        /* area bawah, hero,texttitle,btnexplor,gambar,dll selain navbar */
+        .hero{
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(112, 198, 198);
+            display: flex;
+            justify-content: center;
+
+        }
+        /* area full text  */
+        .area-text{
+            width: 30vw;
+            height: 69.2vh;
+
+            /* display: flex; */
+        }
+        .text-title{
+            font-size: 2.5em;
+            color: antiquewhite;
+            /* margin-top: 20%; */
+        }
+        .text-tagline{
+            font-size: 1.2em;
+            color: rgb(42, 54, 165);
+            /* font-family: ; */
+        }
+        .button-explor{
+            margin-top: 50px;
+
+        }
+        .btn-explor{
+            font-weight: 700;  /* ketebalan */
+            padding: 10px 60px;    /* ukuran dari dalam ke luar */
+            border-radius: 20px;    /* radius ujung */
+            background-color: azure; 
+            color: black;
+            text-decoration: none; /* menghilangkan garis bawah */
+        }
+        .area-img{
+            width: 60vw;
+            height: 92vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+  
+        }
+        .img-brand{
+            transform: scale(0.35);
+            background-color: black;
+        }
+        /* service area */
+        /*  */
+        .container{
+            /* width: 86.7vw; */
+            width: 100vw;
+            /* height: 100vh; */
+            height: 80vh;
+            background-color: brown;
+            margin-top: -70px;
+            padding: 100px;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+        .judul{
+            width: 120vw;
+            height: 20vh;
+            background-color: blue;
+
+        }
+        /* .service{
+            text-align: center;
+            padding: 40px 20px;
+            background-color: black;
+            border-radius: 10px;
+            
+
+
+        } */
+       
+
+
+
+
+
+
+
+
+    </style>
+    <!-- sebuah wadah memerlukan justyfy-content, displayflex,& align....=untuk memasuki di (isi )-->
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="navbar-brand">
+            <h3>Soososo</h3>
+        </div>
+        <div class="navbar-item">
+            <div class="list-item">
+                <ul>
+                    <li><a class="home-item"href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="hero">
+        <div class="area-text">
+            <div class="text-title">
+                <h2>Jusulsdkeo skoek do do</h2>
+            </div>
+            <div class="text-tagline">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis aliquam modi asperiores ipsa a quibusdam!</p>
+            </div>
+            <div class="button-explor">
+                <a href="#" class="btn-explor">Explor</a>
+            </div>
+        </div>
+        <div class="area-img">
+            <div class="img-brand">
+                <img src="jejak pak detek.png">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="judul">
+            <!-- <h1>Service</h1> -->
+        </div>
+        <div class="row">
+            <div class="service">
+            </div>
+            <div class="serviced"></div>
+            <div class="servdice"></div>
+        </div>
+        
+
+    </div>
+    
+
+    
+    
+
+    
+</body>
+</html>
