@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdmitOne</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Andale Mono">
+    <link href='https://fonts.googleapis.com/css?family=Major Mono Display' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=DM Serif Display' rel='stylesheet'>
+    <link href="portofolio.css" rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            /* overflow: hidden; */
+        }
+
+        .area-navbar {
+            background-color: #EAE6D7;
+            width: 100vw;
+            height: 10vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            border-bottom: 2px dotted #2B2B2A;
+        }
+
+        .area-brand-navbar {
+            width: 40vw;
+            height: 10vh;
+            display: flex;
+            text-align: center;
+            align-items: center;
+        }
+
+        .area-brand-navbar h1 {
+            font-size: 60px;
+            margin-left: 80px;
+        }
+
+        .area-brand-navbar p {
+            font-size: 50px;
+            color: #72343A;
+            font-family: Lora;
+        }
+
+        .area-item-navbar {
+            width: 60vw;
+            height: 10vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        ul {
+            list-style-type: none;
+            /* titiknya hilang */
+        }
+
+        li {
+            display: inline;
+            margin: 20px;
+            font-size: 20px;
+        }
+
+        li a {
+            text-decoration: none;
+            color: #2B2B2A;
+            font-weight: 100;
+            font-family: Andale Mono;
+        }
+
+
+
+        /* batas  */
+        .hero {
+            height: 100vh;
+            width: 100vw;
+            background-color: #EAE6D7;
+            display: flex;
+        }
+
+        .area-text {
+            width: 43vw;
+            height: 74vh;
+            /* background-color: #ddc56f; */
+            padding: 100px;
+            margin-left: -40px;
+        }
+
+        .area-text p {
+            color: #2B2B2A;
+        }
+
+        .persen-text {
+            font-size: 200px;
+            font-family: lora;
+            color: #72343A;
+        }
+
+        .programer-text {
+            font-size: 110px;
+            margin-top: -20px;
+        }
+
+        .jurusan-text {
+            font-size: 30px;
+            letter-spacing: 20.6px;
+            font-weight: 100px;
+            font-family: andale mono;
+        }
+
+        .area-image {
+            width: 46vw;
+            height: 100vh;
+            /* background: #EAE6D7; */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .area-fkamu {
+            width: 46vw;
+            height: 75vh;
+            /* background-color: #FF7186; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .area-fkamu fieldset {
+            padding: 17%;
+            width: 40px;
+            height: 35vh;
+            margin-right: 150px;
+            margin-top: 15vh;
+            border-radius: 70px;
+            border: none;
+            background-color: #2B2B2A;
+
+        }
+
+        .active-student {
+            width: 180px;
+            height: 100px;
+            background: #EC4635;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            writing-mode: vertical-rl;
+            /* membuat text dengan vertikal-rl(yang awalnya miring jadi biasa[Rts])*/
+            text-align: center;
+            /* membuat font ke tengah */
+            /* margin: 10px; */
+            border-radius: 100px;
+            /* aniamte */
+            cursor: pointer;
+        }
+        .active-student::hover{
+            background: #FF7186;
+
+
+        }
+
+        fieldset:nth-of-type(1) {
+            transform: rotate(-90deg);
+            /*[FL] membuat si legend jadi ke kiri yang awalnya di atas, dengan memberikan hukum ke fieldset karena dia adalah sang atasan legend, jadi si legend melakukanya[FL]*/
+        }
+
+        /* pindahin si active Student */
+
+        legend p {
+            color: #EAE6D7;
+            font-size: 25px;
+            margin-right: -10px;
+        }
+
+        /* area user, like soisal media, nama dll */
+        .area-sosialmedia{
+            width: 46vw;
+            height: 20vh;
+            /* background-color: #5b24ff; */
+            display: flex;
+            justify-content: center;
+        }
+        .azkabaiq-hp{
+            width: 240px;
+            height: 60px;
+            background-color: #2B2B2A;
+            margin-right: 4.2%;
+            border-radius: 50px;
+            margin-left: -70px;
+            border: 3px  solid #2B2B2A;
+            /* text */
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            font-size: 22px;
+            letter-spacing: 10.6px;
+            font-family: Andale Mono ;
+        }
+        .sosmed1-hp{
+            width: 60px;
+            height: 60px;
+            background-color: #77766F;
+            margin-right: 4.2%;
+            border-radius: 50px;
+            border: 3px  dotted #2B2B2A;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            font-family: monospace;
+
+        }
+        .sosmed2-hp{
+            width: 60px;
+            height: 60px;
+            background-color: #77766F;
+            margin-right: 4.2%;
+            border-radius: 50px;
+            border: 3px  dotted #2B2B2A;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            cursor: pointer;
+        }
+        .image-scn1{
+            width: 60px;
+            height: 60px;
+        }
+        .image-scn2{
+            width: 50px;
+            height: 50px;
+        }
+
+        /* page */
+
+    </style>
+</head>
+
+<body>
+    <div class="area-navbar">
+        <div class="area-brand-navbar">
+            <h1>🎟</h1>
+            <p class="brand">ADMIT<spam style="color: #FF7186;">ONE</spam>
+            </p>
+        </div>
+        <div class="area-item-navbar">
+            <ul>
+                <li><a class="home" href="#">Home</a></li>
+                <li><a class="aboutme" href="#">AboutMe</a></li>
+                <li><a class="skill" href="#">Skill</a></li>
+                <li><a class="contact" href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="hero">
+        <div class="area-text">
+            <div>
+                <p class="persen-text" style="color: #72343A;">69%</p>
+                <p style="font-size: 60px; margin-top: -40px;font-family: lora;">Process to</p>
+                <p class="programer-text">PROGRAMER</p>
+                <p class="jurusan-text">SOFWARE ENGINEER</p>
+                <!-- letter spacing -->
+            </div>
+        </div>
+        <div class="area-image">
+            <div class="area-fkamu">
+                <fieldset>
+                    <legend class="active-student">
+                        
+                        <p>⦿<br>Active<br><b>Student</b></p>
+                    </legend><!-- kotak merah active student  -->
+                </fieldset>
+            </div>
+            <div class="area-sosialmedia"> 
+                <div class="azkabaiq-hp"><p style="color:#EAE6D7;">AzkaBaiq</p></div>
+                <div class="sosmed1-hp">
+                    <img class="image-scn1" src="likedin-lo.png">
+                </div>
+                <div class="sosmed2-hp"><img class="image-scn2" src="github-lo.png"></div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+
+    </div>
+
+</body>
+
+</html>
